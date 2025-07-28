@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <style>
-    *{
-       margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-    }
-    .banner {
-		width: 100%;
-		height: 100vh;
-		background-color: #313131;
-		position: relative;
-	}
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
 
-	.banner img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+		.banner {
+			width: 100%;
+			height: 100vh;
+			background-color: #313131;
+			position: relative;
+		}
 
-	.banner-background {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background-color: #000000cc;
-		z-index: 2;
-		filter: blur(10px);
-	}
+		.banner img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 
-	.lampada {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+		.banner-background {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #000000cc;
+			z-index: 2;
+			filter: blur(10px);
+		}
 
-	.lanterna-container {
-		overflow: hidden;
-		cursor: none;
-	}
-	.banner-text{
-		width: 100%;
-		margin: 0px 5% !important;
-		position: absolute;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		background-color: transparent;
-		z-index: 10;
-		color: #fff;
-	}
-	.banner-text h1{
-		margin: 10px 0px;
-		color: #fff;
-		transition: 0.5s linear;
-		font-size: 5rem;
-		transition: 0.5s;
-	}
-	.banner-text p{
-		font-size: 2rem;
-		font-style: italic;
-		font-weight: 200;
-		margin: 20px 0px;
-        width: 50%;
-	}
-	.banner-imagem{
-		filter: brightness(200px);
-	}
-	.banner-50{
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		width: 75%;
-	}
-</style>
+		.lampada {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.lanterna-container {
+			overflow: hidden;
+			cursor: none;
+		}
+
+		.banner-text {
+			width: 100%;
+			margin: 0px 5% !important;
+			position: absolute;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: transparent;
+			z-index: 10;
+			color: #fff;
+		}
+
+		.banner-text h1 {
+			margin: 10px 0px;
+			color: #fff;
+			transition: 0.5s linear;
+			font-size: 5rem;
+			transition: 0.5s;
+		}
+
+		.banner-text p {
+			font-size: 2rem;
+			font-style: italic;
+			font-weight: 200;
+			margin: 20px 0px;
+			width: 50%;
+		}
+
+		.banner-imagem {
+			filter: brightness(200px);
+		}
+
+		.banner-50 {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 75%;
+		}
+
+		@media only screen and (min-width: 1366px) {
+			.banner-text h1 {
+				font-size: 2rem;
+			}
+
+			.banner-text p {
+				font-size: 1rem;
+			}
+		}
+	</style>
 </head>
+
 <body>
-    <main>
+	<main>
 
-	<div class="banner lanterna-container">
+		<div class="banner lanterna-container">
 
-		<div class="banner-text">
-			<div class="banner-50">
-				<h1>Luminárias para todos os ambientes</h1>
-				<p>"A arte de renovar espaços com a luz certa vai além da decoração; é sobre transformar lugares"</p>
+			<div class="banner-text">
+				<div class="banner-50">
+					<h1>Luminárias para todos os ambientes</h1>
+					<p>"A arte de renovar espaços com a luz certa vai além da decoração; é sobre transformar lugares"
+					</p>
+				</div>
 			</div>
+			<div class="banner-background"></div>
+			<img src="banner-3.jpg" alt="banner imagem" class="banner-imagem">
+
 		</div>
-		<div class="banner-background"></div>
-		<img src="banner-3.jpg" alt="banner imagem" class="banner-imagem">
 
-	</div>
+		<script>
+			const container = document.querySelector('.lanterna-container');
+			const background = document.querySelector('.banner-background');
 
-<script>
-	const container = document.querySelector('.lanterna-container');
-	const background = document.querySelector('.banner-background');
+			container.addEventListener('mousemove', function (e) {
+				const rect = container.getBoundingClientRect();
+				const x = e.clientX - rect.left;
+				const y = e.clientY - rect.top;
 
-	container.addEventListener('mousemove', function(e) {
-		const rect = container.getBoundingClientRect();
-		const x = e.clientX - rect.left;
-		const y = e.clientY - rect.top;
+				const raioTransparente = 10;
+				const raioOpaco = 240;
 
-		const raioTransparente = 10; 
-		const raioOpaco = 240; 
+				background.style.background = `radial-gradient(circle at ${x}px ${y}px, transparent ${raioTransparente}px, #000000cc ${raioOpaco}px)`;
+			});
 
-		background.style.background = `radial-gradient(circle at ${x}px ${y}px, transparent ${raioTransparente}px, #000000cc ${raioOpaco}px)`;
-	});
-
-	container.addEventListener('mouseleave', function() {
-		background.style.background = '#000000cc';
-	});
-</script>
+			container.addEventListener('mouseleave', function () {
+				background.style.background = '#000000cc';
+			});
+		</script>
 
 
 
 </body>
+
 </html>
